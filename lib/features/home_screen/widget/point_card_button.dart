@@ -1,3 +1,4 @@
+import 'package:education/assets_helper/assets_fonts.dart';
 import 'package:education/helpers/ui_helpers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -8,6 +9,7 @@ class PointCardButton extends StatelessWidget {
   final Color iconContainerColor;
   final String title;
   final String point;
+  final Color pointColor;
   const PointCardButton({
     super.key,
     required this.containerColor,
@@ -15,6 +17,7 @@ class PointCardButton extends StatelessWidget {
     required this.point,
     required this.containerBorderColor,
     required this.iconContainerColor,
+    required this.pointColor,
   });
 
   @override
@@ -49,11 +52,16 @@ class PointCardButton extends StatelessWidget {
               ),
               UIHelper.howizontalspace,
 
-              Text(title),
+              Text(title, style: TextFontStyle.textFntstyleFitree16w600),
             ],
           ),
 
-          Text(point),
+          Text(
+            point,
+            style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+              color: pointColor,
+            ),
+          ),
         ],
       ),
     );
