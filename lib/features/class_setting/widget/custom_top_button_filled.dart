@@ -17,17 +17,25 @@ class CustomTopButtonFilled extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 44.0.h,
         width: 149.w,
+        padding: EdgeInsets.only(
+          top: 11.h,
+          bottom: 11.h,
+          right: 11.w,
+          left: 11.w,
+        ),
+
         decoration: BoxDecoration(
           color: fillColor,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Row(children: [
+        child: Row(
+          children: [
+            SizedBox(height: 20.h, width: 20.w, child: Placeholder()),
 
-
-            ],
-          ),
+            Text(title),
+          ],
+        ),
       ),
     );
   }
