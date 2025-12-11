@@ -1,0 +1,217 @@
+import 'package:education/assets_helper/app_colors.dart';
+import 'package:education/assets_helper/assets_fonts.dart';
+import 'package:education/constants/app_constants.dart';
+import 'package:education/features/home_screen/widget/custom_app_bar.dart';
+import 'package:education/features/home_screen/widget/custom_viewclass_button.dart';
+import 'package:education/features/home_screen/widget/point_card_button.dart';
+import 'package:education/gen/colors.gen.dart';
+import 'package:education/helpers/ui_helpers.dart';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    String dropDownValue = 'Grade 4 - (Class Name)';
+
+    return Scaffold(
+      //============== backround color ================
+      backgroundColor: ColorName.cFFFFFF,
+      body: SafeArea(
+        child: Column(
+          children: [
+            //===================== custom App bar ====================
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 16),
+              child: CustomAppBar(
+                name: 'Derech Erets',
+                instituteName: 'Technion Israel Institute of Tec...',
+              ),
+            ),
+
+            Divider(color: AppColor.cF2F2F2, height: 0.8),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    UIHelper.verticalSpacemedium,
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          AppConstants.selectClass,
+                          style: TextFontStyle.txtfntstyleFitree14w400,
+                        ),
+                      ],
+                    ),
+
+                    UIHelper.verticalspacesmall,
+
+                    Container(
+                      padding: EdgeInsets.all(20),
+                      width: 335.w,
+                      height: 44.h,
+
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.r),
+                        border: Border.all(color: AppColor.c2E3227, width: 0.5),
+                      ),
+                      child: DropdownButtonHideUnderline(
+                        child: DropdownButton<String>(
+                          isExpanded: true,
+                          borderRadius: BorderRadius.circular(8),
+
+                          value: dropDownValue,
+                          icon: Row(
+                            children: [
+                              Icon(
+                                Icons.arrow_drop_down,
+                                color: Colors.blueGrey,
+                              ),
+                            ],
+                          ),
+                          style: TextStyle(color: AppColor.c595C53),
+
+                          items: [
+                            DropdownMenuItem<String>(
+                              value: 'Grade 4 - (Class Name)',
+                              child: Text('Grade 4 - (Class Name)'),
+                            ),
+                            DropdownMenuItem<String>(
+                              value: 'Grade 5 - (Class Name)',
+                              child: Text('Grade 5 - (Class Name)'),
+                            ),
+                            DropdownMenuItem<String>(
+                              value: 'Grade 6 - (Class Name)',
+                              child: Text('Grade 6 - (Class Name)'),
+                            ),
+                            DropdownMenuItem<String>(
+                              value: 'Grade 7 - (Class Name)',
+                              child: Text('Grade 7 - (Class Name)'),
+                            ),
+                            DropdownMenuItem<String>(
+                              value: 'Grade 8 - (Class Name)',
+                              child: Text('Grade 8 - (Class Name)'),
+                            ),
+                            DropdownMenuItem<String>(
+                              value: 'Create New Class',
+                              child: Text('+ Create New Class'),
+                            ),
+                          ],
+                          onChanged: (String? newValue) {
+                            setState(() {
+                              dropDownValue = newValue!;
+                            });
+                          },
+                        ),
+                      ),
+                    ),
+                    UIHelper.verticalSpacemedium,
+
+                    Container(
+                      padding: EdgeInsets.all(16.0),
+
+                      width: MediaQuery.of(context).size.width,
+
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        color: ColorName.cFFFFFF,
+                        border: Border.all(color: AppColor.c2E3227, width: 0.5),
+                      ),
+
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    AppConstants.classname,
+                                    style: TextFontStyle
+                                        .textFntstyleFitree16w600
+                                        .copyWith(fontWeight: FontWeight.w500),
+                                  ),
+                                  UIHelper.verticalspaverysmall,
+
+                                  Text(
+                                    "Grade 8",
+                                    style:
+                                        TextFontStyle.txtfntstyleFitree14w400,
+                                  ),
+                                ],
+                              ),
+
+                              SizedBox(
+                                height: 33.3.h,
+                                width: 33.3.w,
+                                child: Placeholder(),
+                              ),
+                            ],
+                          ),
+                          UIHelper.verticalspace16,
+
+                          //==  point contyainer ===============
+                          PointCardButton(
+                            containerColor: AppColor.cBEDBFF,
+                            title: 'Total Point',
+                            point: '620',
+                            containerBorderColor: AppColor.cBEDBFF,
+                            iconContainerColor: AppColor.c1E88E5,
+                          ),
+                          UIHelper.verticalspace12,
+
+                          PointCardButton(
+                            containerColor: AppColor.cBE2FDEB,
+                            title: 'Total Students',
+                            point: '256',
+                            containerBorderColor: AppColor.cBE2FDEB,
+                            iconContainerColor: AppColor.c00A63E,
+                          ),
+                          UIHelper.verticalspace12,
+
+                          PointCardButton(
+                            containerColor: AppColor.cE9D4FF,
+                            title: 'Lessons Conducted',
+                            point: '23',
+                            containerBorderColor: AppColor.cE9D4FF,
+                            iconContainerColor: AppColor.c9810FA,
+                          ),
+                          UIHelper.verticalspace32,
+
+                          //=================== first button===============
+                          CustomViewclassButton(
+                            title: 'View Students',
+                            onTap: () {},
+                          ),
+                          UIHelper.verticalspace16,
+                          //=================== second button===============
+                          CustomViewclassButton(
+                            title: 'Class Settings',
+                            onTap: () {},
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
