@@ -4,6 +4,7 @@ import 'dart:io';
 
 import 'package:education/features/class_setting/presentation/class_setting_screen.dart';
 import 'package:education/features/home_screen/presentation/home_screen.dart';
+import 'package:education/features/subject_teacher/presentation/subject_teacher.dart';
 import 'package:flutter/cupertino.dart';
 
 final class Routes {
@@ -13,6 +14,7 @@ final class Routes {
 
   static const String homescreen = '/homescreen';
   static const String classSettingScreen = '/classSettingScreen';
+  static const String subjectandteacher = '/subjectandteacher';
 }
 
 final class RouteGenerator {
@@ -34,6 +36,14 @@ final class RouteGenerator {
                 settings: settings,
               )
             : CupertinoPageRoute(builder: (context) => ClassSettingScreen());
+
+      case Routes.subjectandteacher:
+        return Platform.isAndroid
+            ? _FadedTransitionRoute(
+                widget: SubjectTeacher(),
+                settings: settings,
+              )
+            : CupertinoPageRoute(builder: (context) => SubjectTeacher());
 
       // case Routes.screenView:
       //   Map<String, dynamic> data = settings.arguments as Map<String, dynamic>;
