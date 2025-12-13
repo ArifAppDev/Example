@@ -16,6 +16,7 @@ final class UIHelper {
   static double verticalspace19value = 19.h;
   static double verticalspace20value = 20.h;
   static double horizontalspace20value = 20.w;
+  static double horizontalspace16value = 16.w;
 
   static Widget verticalSpacemedium = SizedBox(
     height: verticalSpacemediumvalue,
@@ -32,4 +33,5 @@ final class UIHelper {
   static Widget verticalspace19 = SizedBox(height: verticalspace19value);
   static Widget verticalspace20 = SizedBox(height: verticalspace20value);
   static Widget horizontalspace20 = SizedBox(width: horizontalspace20value);
+  static Widget horizontalspace16 = SizedBox(width: horizontalspace16value);
 }

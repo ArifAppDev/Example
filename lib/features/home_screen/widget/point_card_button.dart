@@ -23,13 +23,13 @@ class PointCardButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16.0),
+      padding: EdgeInsets.all(16.0.w),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: containerColor,
         border: Border.all(color: containerBorderColor, width: 1.0.w),
       ),
-      height: 64.0.h,
+
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -37,7 +37,7 @@ class PointCardButton extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(8.r),
                   color: iconContainerColor,
                 ),
                 height: 32.h,

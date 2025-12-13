@@ -18,10 +18,10 @@ class CustomViewclassButton extends StatelessWidget {
 
       child: Container(
         padding: EdgeInsets.only(
-          top: 15.0.h,
-          bottom: 15.0,
-          right: 10.0.w,
-          left: 10.0.w,
+          top: 15.h,
+          bottom: 15.h,
+          right: 10.w,
+          left: 10.w,
         ),
         decoration: BoxDecoration(
           color: AppColor.bgColor,

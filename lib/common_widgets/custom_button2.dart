@@ -24,8 +24,7 @@ class CustomButtontwo extends StatelessWidget {
           borderRadius: BorderRadius.circular(8.r),
           border: Border.all(color: containerBorderColor),
         ),
-        height: 52.0.h,
-        width: MediaQuery.of(context).size.width,
+
         child: Center(
           child: Text(
             title,

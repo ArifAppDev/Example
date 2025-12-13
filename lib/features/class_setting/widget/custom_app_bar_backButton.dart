@@ -1,3 +1,5 @@
+import 'package:education/assets_helper/app_colors.dart';
+import 'package:education/assets_helper/assets_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,7 +16,14 @@ class CustomAppBarBackbutton extends StatelessWidget {
         children: [
           SizedBox(height: 20.0.h, width: 20.0.w, child: Placeholder()),
           SizedBox(width: 5.0.w),
-          Text(appbarName),
+          Text(
+            appbarName,
+            style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+              fontWeight: FontWeight.w500,
+              fontSize: 18,
+              color: AppColor.c2E3227,
+            ),
+          ),
         ],
       ),
     );
