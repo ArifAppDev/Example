@@ -8,6 +8,8 @@ import 'package:education/features/home_screen/widget/custom_drawer.dart';
 import 'package:education/features/home_screen/widget/custom_viewclass_button.dart';
 import 'package:education/features/home_screen/widget/point_card_button.dart';
 import 'package:education/gen/colors.gen.dart';
+import 'package:education/helpers/all_routes.dart';
+import 'package:education/helpers/navigation_service.dart';
 import 'package:education/helpers/ui_helpers.dart';
 
 import 'package:flutter/material.dart';
@@ -63,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       UIHelper.verticalspacesmall,
 
                       Container(
-                        padding: EdgeInsets.all(20),
+                        padding: EdgeInsets.all(16.w),
                         width: MediaQuery.of(context).size.width,
                         height: 44.h,
 
@@ -71,13 +73,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           borderRadius: BorderRadius.circular(8.r),
                           border: Border.all(
                             color: AppColor.c2E3227,
-                            width: 0.5,
+                            width: 0.5.w,
                           ),
                         ),
                         child: DropdownButtonHideUnderline(
                           child: DropdownButton<String>(
                             isExpanded: true,
-                            borderRadius: BorderRadius.circular(8),
+                            borderRadius: BorderRadius.circular(8.r),
 
                             value: dropDownValue,
                             icon: Row(
@@ -127,16 +129,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       UIHelper.verticalSpacemedium,
 
                       Container(
-                        padding: EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(16.w),
 
                         width: MediaQuery.of(context).size.width,
 
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(8.r),
                           color: ColorName.cFFFFFF,
                           border: Border.all(
                             color: AppColor.c2E3227,
-                            width: 0.5,
+                            width: 0.5.w,
                           ),
                         ),
 
@@ -216,7 +218,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             //=================== second button===============
                             CustomViewclassButton(
                               title: 'Class Settings',
-                              onTap: () {},
+                              onTap: () {
+                                NavigationService.navigateTo(
+                                  Routes.classSettingScreen,
+                                );
+                              },
                             ),
                             UIHelper.verticalspace24,
 

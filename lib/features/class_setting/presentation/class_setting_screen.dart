@@ -1,6 +1,7 @@
 import 'package:education/assets_helper/app_colors.dart';
 import 'package:education/features/class_setting/widget/custom_app_bar_backButton.dart';
 import 'package:education/features/class_setting/widget/custom_top_button_filled.dart';
+import 'package:education/features/class_setting/widget/custom_top_button_undilled.dart';
 import 'package:education/gen/colors.gen.dart';
 import 'package:education/helpers/ui_helpers.dart';
 import 'package:flutter/material.dart';
@@ -16,31 +17,42 @@ class ClassSettingScreen extends StatelessWidget {
       backgroundColor: ColorName.cFFFFFF,
 
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              //===================== custom app bar ==================
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.0.w),
-                child: CustomAppBarBackbutton(appbarName: 'Class Settings'),
-              ),
-              UIHelper.verticalspace16,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20.w),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                //===================== custom app bar ==================
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.0.w),
+                  child: CustomAppBarBackbutton(appbarName: 'Class Settings'),
+                ),
+                UIHelper.verticalspace16,
 
-              SizedBox(
-                width: double.infinity.w,
-                child: Divider(height: 1.0.h, color: AppColor.cF2F2F2),
-              ),
+                SizedBox(
+                  width: double.infinity.w,
+                  child: Divider(height: 1.0.h, color: AppColor.cF2F2F2),
+                ),
+                UIHelper.verticalspace20,
 
-              Row(
-                children: [
-                  CustomTopButtonFilled(
-                    fillColor: AppColor.cF0F0F0,
-                    title: 'Class Overview',
-                    onTap: () {},
-                  ),
-                ],
-              ),
-            ],
+                Row(
+                  children: [
+                    CustomTopButtonFilled(
+                      fillColor: AppColor.cF0F0F0,
+                      title: 'Class Overview',
+                      onTap: () {},
+                    ),
+                    UIHelper.horizontalspace20,
+
+                    CustomTopButtonUndilled(
+                      onTap: () {},
+                      title: 'Subjects & Teachers',
+                      fillColor: AppColor.cF3F5F7,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

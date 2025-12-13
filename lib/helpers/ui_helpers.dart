@@ -5,15 +5,17 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 final class UIHelper {
   UIHelper._();
 
-  static double verticalSpacemediumvalue = 17.0.h;
-  static double verticalspace16value = 16.0.h;
-  static double varticalspacesmallvalue = 17.0.h;
-  static double verticalspacesmallvalue = 6.0.h;
-  static double horizontalspacemediumvalue = 13.0.h;
-  static double verticalspace12value = 12.0.h;
-  static double verticalspace32value = 32.0.h;
-  static double verticalspace24value = 24.0.h;
-  static double verticalspace19value = 19.0.h;
+  static double verticalSpacemediumvalue = 17.h;
+  static double verticalspace16value = 16.h;
+  static double varticalspacesmallvalue = 17.h;
+  static double verticalspacesmallvalue = 6.h;
+  static double horizontalspacemediumvalue = 13.h;
+  static double verticalspace12value = 12.h;
+  static double verticalspace32value = 32.h;
+  static double verticalspace24value = 24.h;
+  static double verticalspace19value = 19.h;
+  static double verticalspace20value = 20.h;
+  static double horizontalspace20value = 20.w;
 
   static Widget verticalSpacemedium = SizedBox(
     height: verticalSpacemediumvalue,
@@ -28,4 +30,6 @@ final class UIHelper {
   static Widget verticalspace32 = SizedBox(height: verticalspace32value);
   static Widget verticalspace24 = SizedBox(height: verticalspace24value);
   static Widget verticalspace19 = SizedBox(height: verticalspace19value);
+  static Widget verticalspace20 = SizedBox(height: verticalspace20value);
+  static Widget horizontalspace20 = SizedBox(width: horizontalspace20value);
 }

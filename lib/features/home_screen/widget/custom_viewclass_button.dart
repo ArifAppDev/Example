@@ -13,25 +13,29 @@ class CustomViewclassButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.only(
-        top: 15.0.h,
-        bottom: 15.0,
-        right: 10.0.w,
-        left: 10.0.w,
-      ),
-      decoration: BoxDecoration(
-        color: AppColor.bgColor,
-        borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: AppColor.c2E3227, width: 0.4.w),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SizedBox(height: 20.h, width: 20.w, child: Placeholder()),
-          SizedBox(width: 5.0.w),
-          Text(title),
-        ],
+    return GestureDetector(
+      onTap: onTap,
+
+      child: Container(
+        padding: EdgeInsets.only(
+          top: 15.0.h,
+          bottom: 15.0,
+          right: 10.0.w,
+          left: 10.0.w,
+        ),
+        decoration: BoxDecoration(
+          color: AppColor.bgColor,
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: AppColor.c2E3227, width: 0.4.w),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SizedBox(height: 20.h, width: 20.w, child: Placeholder()),
+            SizedBox(width: 5.0.w),
+            Text(title),
+          ],
+        ),
       ),
     );
   }
