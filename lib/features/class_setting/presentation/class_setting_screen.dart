@@ -99,7 +99,8 @@ class ClassSettingScreen extends StatelessWidget {
                           children: [
                             Text(
                               AppConstants.hometeacherinfo,
-                              style: TextFontStyle.textFntstyleFitree16w600,
+                              style: TextFontStyle
+                                  .txtfontstyleFigtree16w600c2E3227,
                             ),
                             Row(
                               children: [
@@ -118,7 +119,7 @@ class ClassSettingScreen extends StatelessWidget {
                                       child: Text(
                                         "Rachel Green",
                                         style: TextFontStyle
-                                            .textFntstyleFitree16w600
+                                            .txtfontstyleFigtree16w600c2E3227
                                             .copyWith(
                                               fontWeight: FontWeight.w400,
                                             ),
@@ -127,7 +128,7 @@ class ClassSettingScreen extends StatelessWidget {
                                     Text(
                                       "rachel.green@gmail.com",
                                       style: TextFontStyle
-                                          .textFntstyleFitree16w600
+                                          .txtfontstyleFigtree16w600c2E3227
                                           .copyWith(
                                             fontWeight: FontWeight.w400,
                                           ),

@@ -28,7 +28,7 @@ class CustomButtontwo extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+            style: TextFontStyle.txtfontstyleFigtree16w600c2E3227.copyWith(
               fontWeight: FontWeight.w500,
               color: AppColor.primaryColor,
             ),

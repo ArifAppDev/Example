@@ -52,13 +52,16 @@ class PointCardButton extends StatelessWidget {
               ),
               UIHelper.howizontalspace,
 
-              Text(title, style: TextFontStyle.textFntstyleFitree16w600),
+              Text(
+                title,
+                style: TextFontStyle.txtfontstyleFigtree16w600c2E3227,
+              ),
             ],
           ),
 
           Text(
             point,
-            style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+            style: TextFontStyle.txtfontstyleFigtree16w600c2E3227.copyWith(
               color: pointColor,
             ),
           ),

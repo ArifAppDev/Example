@@ -86,11 +86,12 @@ class SubjectTeacher extends StatelessWidget {
                         children: [
                           Text(
                             AppConstants.allsubject,
-                            style: TextFontStyle.textFntstyleFitree16w600,
+                            style:
+                                TextFontStyle.txtfontstyleFigtree16w600c2E3227,
                           ),
                           Text(
                             "View and manage teachers attached\n to this class",
-                            style: TextFontStyle.txtfntstyleFitree14w400,
+                            style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
                           ),
                           SizedBox(height: 27.h),
 

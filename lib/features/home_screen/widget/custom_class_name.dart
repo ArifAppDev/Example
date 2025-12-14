@@ -36,13 +36,15 @@ class CustomClassnameCard extends StatelessWidget {
                 children: [
                   Text(
                     AppConstants.classname,
-                    style: TextFontStyle.textFntstyleFitree16w600.copyWith(
-                      fontWeight: FontWeight.w500,
-                    ),
+                    style: TextFontStyle.txtfontstyleFigtree16w600c2E3227
+                        .copyWith(fontWeight: FontWeight.w500),
                   ),
                   UIHelper.verticalspaverysmall,
 
-                  Text("Grade 8", style: TextFontStyle.txtfntstyleFitree14w400),
+                  Text(
+                    "Grade 8",
+                    style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
+                  ),
                 ],
               ),
 

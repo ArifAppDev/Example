@@ -18,7 +18,7 @@ class CustomAppBarBackbutton extends StatelessWidget {
           SizedBox(width: 5.0.w),
           Text(
             appbarName,
-            style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+            style: TextFontStyle.txtfontstyleFigtree16w600c2E3227.copyWith(
               fontWeight: FontWeight.w500,
               fontSize: 18,
               color: AppColor.c2E3227,

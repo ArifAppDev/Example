@@ -40,17 +40,20 @@ class CustomUserCard extends StatelessWidget {
             children: [
               Text(
                 username,
-                style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+                style: TextFontStyle.txtfontstyleFigtree16w600c2E3227.copyWith(
                   fontWeight: FontWeight.w500,
                   color: AppColor.c000000,
                 ),
               ),
               UIHelper.verticalSpace(2.h),
-              Text(usergmail, style: TextFontStyle.txtfntstyleFitree14w400),
+              Text(
+                usergmail,
+                style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
+              ),
               UIHelper.verticalSpace(4.h),
               Text(
                 userJoinedDate,
-                style: TextFontStyle.txtfntstyleFitree14w400,
+                style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
               ),
               UIHelper.verticalSpace(4.h),
               Row(
@@ -66,7 +69,7 @@ class CustomUserCard extends StatelessWidget {
                     ),
                     child: Text(
                       "Mathematics",
-                      style: TextFontStyle.txtfntstyleFitree12w400,
+                      style: TextFontStyle.txtfntstyleFitree12w400c59c53,
                     ),
                   ),
                   UIHelper.horizontalSpace(6.w),
@@ -81,7 +84,7 @@ class CustomUserCard extends StatelessWidget {
                     ),
                     child: Text(
                       "Science",
-                      style: TextFontStyle.txtfntstyleFitree12w400,
+                      style: TextFontStyle.txtfntstyleFitree12w400c59c53,
                     ),
                   ),
                 ],

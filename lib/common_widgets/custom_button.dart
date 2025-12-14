@@ -26,7 +26,7 @@ class CustomButton extends StatelessWidget {
             SizedBox(width: 5.w),
             Text(
               title,
-              style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+              style: TextFontStyle.txtfontstyleFigtree16w600c2E3227.copyWith(
                 fontWeight: FontWeight.w500,
                 color: AppColor.bgColor,
               ),

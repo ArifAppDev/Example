@@ -28,12 +28,12 @@ class CustomClassSecretcodeCard extends StatelessWidget {
         children: [
           Text(
             AppConstants.classSecretCode,
-            style: TextFontStyle.textFntstyleFitree16w600,
+            style: TextFontStyle.txtfontstyleFigtree16w600c2E3227,
           ),
           SizedBox(height: 2.h),
           Text(
             "Use this code to invite subject teachers to join your class",
-            style: TextFontStyle.txtfntstyleFitree14w400,
+            style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
           ),
           UIHelper.verticalspace16,
           Row(

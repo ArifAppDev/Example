@@ -26,7 +26,7 @@ class CustomClassSummaryCard extends StatelessWidget {
         children: [
           Text(
             AppConstants.classsummary,
-            style: TextFontStyle.textFntstyleFitree16w600.copyWith(
+            style: TextFontStyle.txtfontstyleFigtree16w600c2E3227.copyWith(
               fontWeight: FontWeight.w500,
               color: AppColor.c000000,
               fontSize: 18.sp,
@@ -68,15 +68,16 @@ class CustomClassSummaryCard extends StatelessWidget {
                       children: [
                         Text(
                           "03",
-                          style: TextFontStyle.txtfntstyleFitree12w400.copyWith(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 16,
-                            color: AppColor.c9810FA,
-                          ),
+                          style: TextFontStyle.txtfntstyleFitree12w400c59c53
+                              .copyWith(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 16,
+                                color: AppColor.c9810FA,
+                              ),
                         ),
                         Text(
                           "Total Subject",
-                          style: TextFontStyle.txtfntstyleFitree12w400,
+                          style: TextFontStyle.txtfntstyleFitree12w400c59c53,
                         ),
                       ],
                     ),
@@ -118,12 +119,12 @@ class CustomClassSummaryCard extends StatelessWidget {
                       children: [
                         Text(
                           "03",
-                          style: TextFontStyle.textFntstyleFitree16w600
+                          style: TextFontStyle.txtfontstyleFigtree16w600c2E3227
                               .copyWith(color: AppColor.cEA580C),
                         ),
                         Text(
                           "Total Subject",
-                          style: TextFontStyle.txtfntstyleFitree12w400,
+                          style: TextFontStyle.txtfntstyleFitree12w400c59c53,
                         ),
                       ],
                     ),
@@ -139,13 +140,14 @@ class CustomClassSummaryCard extends StatelessWidget {
             children: [
               Text(
                 AppConstants.classname,
-                style: TextFontStyle.txtfntstyleFitree12w400.copyWith(
+                style: TextFontStyle.txtfntstyleFitree12w400c59c53.copyWith(
                   fontSize: 16,
                 ),
               ),
               Text(
                 "Mathematics 101",
-                style: TextFontStyle.textFntstyleFitree16w600.copyWith(),
+                style: TextFontStyle.txtfontstyleFigtree16w600c2E3227
+                    .copyWith(),
               ),
             ],
           ),
@@ -155,13 +157,14 @@ class CustomClassSummaryCard extends StatelessWidget {
             children: [
               Text(
                 AppConstants.gradeLevel,
-                style: TextFontStyle.txtfntstyleFitree12w400.copyWith(
+                style: TextFontStyle.txtfntstyleFitree12w400c59c53.copyWith(
                   fontSize: 16,
                 ),
               ),
               Text(
                 "Grade 8",
-                style: TextFontStyle.textFntstyleFitree16w600.copyWith(),
+                style: TextFontStyle.txtfontstyleFigtree16w600c2E3227
+                    .copyWith(),
               ),
             ],
           ),
@@ -171,13 +174,14 @@ class CustomClassSummaryCard extends StatelessWidget {
             children: [
               Text(
                 AppConstants.classCreateDate,
-                style: TextFontStyle.txtfntstyleFitree12w400.copyWith(
+                style: TextFontStyle.txtfntstyleFitree12w400c59c53.copyWith(
                   fontSize: 16,
                 ),
               ),
               Text(
                 "12/03/2025",
-                style: TextFontStyle.textFntstyleFitree16w600.copyWith(),
+                style: TextFontStyle.txtfontstyleFigtree16w600c2E3227
+                    .copyWith(),
               ),
             ],
           ),

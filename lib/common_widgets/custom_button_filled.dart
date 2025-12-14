@@ -37,7 +37,7 @@ class CustomButtonFilled extends StatelessWidget {
 
             Text(
               title,
-              style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+              style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                 fontSize: 12,
               ),
             ),

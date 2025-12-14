@@ -30,15 +30,13 @@ class CustomAppBar extends StatelessWidget {
                     children: [
                       Text(
                         name,
-                        style: TextFontStyle.textFntstyleFitree16w600.copyWith(
-                          fontSize: 16,
-                        ),
+                        style: TextFontStyle.txtfontstyleFigtree16w600c2E3227
+                            .copyWith(fontSize: 16),
                       ),
                       Text(
                         instituteName,
-                        style: TextFontStyle.txtfntstyleFitree12w400.copyWith(
-                          fontSize: 12,
-                        ),
+                        style: TextFontStyle.txtfntstyleFitree12w400c59c53
+                            .copyWith(fontSize: 12),
                       ),
                     ],
                   ),

@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Text(
                             AppConstants.selectClass,
-                            style: TextFontStyle.txtfntstyleFitree14w400,
+                            style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
                           ),
                         ],
                       ),
@@ -106,13 +106,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
                             Text(
                               AppConstants.createNewClass,
-                              style: TextFontStyle.textFntstyleFitree16w600,
+                              style: TextFontStyle
+                                  .txtfontstyleFigtree16w600c2E3227,
                             ),
                             SizedBox(height: 8.0.h),
 
                             Text(
                               AppConstants.addanewclassto,
-                              style: TextFontStyle.txtfntstyleFitree14w400,
+                              style:
+                                  TextFontStyle.txtfntstyleFitree14w400c2E3227,
                               textAlign: TextAlign.center,
                             ),
 

@@ -26,11 +26,11 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
         children: [
           Text(
             AppConstants.subjectsandAssignedTeachers,
-            style: TextFontStyle.textFntstyleFitree16w600,
+            style: TextFontStyle.txtfontstyleFigtree16w600c2E3227,
           ),
           Text(
             AppConstants.subjectsandAssignedTeachers,
-            style: TextFontStyle.txtfntstyleFitree14w400,
+            style: TextFontStyle.txtfntstyleFitree14w400c2E3227,
           ),
           SizedBox(height: 27.h),
 
@@ -39,19 +39,19 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
             children: [
               Text(
                 AppConstants.subject,
-                style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                   fontWeight: FontWeight.w500,
                 ),
               ),
               Text(
                 AppConstants.assigned,
-                style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                   fontWeight: FontWeight.w500,
                 ),
               ),
               Text(
                 AppConstants.actions,
-                style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -70,7 +70,7 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
                 padding: EdgeInsets.only(right: 36.w),
                 child: Text(
                   "Mathematics",
-                  style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                  style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -79,7 +79,7 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
                 padding: EdgeInsetsGeometry.only(right: 30.w),
                 child: Text(
                   "Mr. David Cohen",
-                  style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                  style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -100,7 +100,7 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
                 padding: EdgeInsets.only(right: 36.w),
                 child: Text(
                   "Science",
-                  style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                  style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -109,7 +109,7 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
                 padding: EdgeInsetsGeometry.only(right: 30.w),
                 child: Text(
                   "Ms. Sara Levy",
-                  style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                  style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -130,7 +130,7 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
                 padding: EdgeInsets.only(right: 36.w),
                 child: Text(
                   "English",
-                  style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                  style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -139,7 +139,7 @@ class CustomSubjectAssignedTcher extends StatelessWidget {
                 padding: EdgeInsetsGeometry.only(right: 30.w),
                 child: Text(
                   "Mr. David Cohen",
-                  style: TextFontStyle.txtfntstyleFitree14w400.copyWith(
+                  style: TextFontStyle.txtfntstyleFitree14w400c2E3227.copyWith(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
